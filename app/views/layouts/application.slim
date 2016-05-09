@@ -17,9 +17,9 @@ head
 body
 
 
-nav 
+nav
 
- a= link_to "Itabo", root_path
+ a= link_to "Teepees", root_path
  a= link_to "Post", new_note_path
 - if current_user
   =link_to "Log out",  destroy_user_session_path , method: :delete
@@ -32,7 +32,7 @@ p.alert= alert
 a.dropdown-button.btn data-activates="dropdown1" href="#"  Menu
 ul#dropdown1.dropdown-content
   li
-    a= link_to "Itabo", root_path
+    a= link_to "Teepees", root_path
   li
     a= link_to "Post", new_note_path
   li.divider
@@ -42,7 +42,7 @@ ul#dropdown1.dropdown-content
 
 
 .card-panel
-  h2 Welcome to Itabo
+  h2 Hello User
 
 = yield
 
@@ -58,25 +58,3 @@ ul#dropdown1.dropdown-content
     table cellpadding="10" cellspacing="5" style=("width: 100%;")
       tr#membertr
         td align="middle" width="25%"
-          img alt=("the prof pic") height="80%" src="itabo4/app/assets/images/keith.jpg" width="100%" /
-        td valign="middle" width="75%"
-          h2 Keith Mantel
-          h3 Co-founder and Chief Executive Officer
-          p Keith has spent much of the last 10 years living and working abroad in post-conflict and underdeveloped regions of the world. He graduated from the University of Maryland with a BA in Government and International Development. Seeking opportunities in the foreign policy sphere, he joined US Army Intelligence and served for six years, deploying to Iraq and Afghanistan.  While in the military, Keith completed his MBA and also acquired skills in GIS, management, and data collection and analysis. Frustrated with military’s function in nation building, he decided to apply his skills elsewhere in global development.
-          p Focusing on land rights, he traveled to Myanmar, conducting research on land tenure disputes. He discovered that land also played a significant role in the stagnation of poverty reduction and political development. Keith is now completing his thesis for a Master’s of Science with the Technical University of Munich, on research conducted throughout 2015 in Jamaica.
-          a href="http://www.twitter.com/KeithMantel"
-            img src="http://www.whitman-ma.gov/ImageRepository/Document?documentID=204" /
-          a href="https://www.linkedin.com/in/keithmantel"
-            img src="http://www.mpsenergi.co.uk/wp-content/uploads/2012/10/Linkedin3.png" /
-      tr
-        td align="middle" width="25%"
-          img alt=("the prof pic2") height="80%" src="images/anthony.png" width="100%" /
-        td valign="middle" width="75%"
-          h2 Anthony Dewstow
-          h3 Co-founder and Chief Technology Officer
-          p Anthony has been a PHP and MySQL programmer since 2008. Anthony has a passion for programming and has worked in both small and large companies. He has programmed a number of custom website applications from the begining and has also developed large process management applications. With an interest in mapping and real estate, Anthony developed a website that makes it easy for consumers in the Houston area to learn about the rental market with an attractive UI/UX integrated into Google Maps. He has vast experience making HTML5 and mobile ready websites that leverage jQuery and AJAX to help sites load quickly and responsively using small and efficient code.
-          p Anthony is unique because he has expertise with both front and backend development and is proficient with several other languages to include CSS, XML, JavaScript, as well as Google and Facebook APIs. Anthony is also proficient on the server side with a keen understanding of website security and cloud storage such as Amazon S3. Anthony graduated from the University of Houston Downtown in 2012 with a Bachelor of Science.
-          a href="http://www.twitter.com/amdewstow"
-            img src="http://www.whitman-ma.gov/ImageRepository/Document?documentID=204" /
-          a href="https://www.linkedin.com/in/anthonydewstow"
-            img src="http://www.mpsenergi.co.uk/wp-content/uploads/2012/10/Linkedin3.png" /
