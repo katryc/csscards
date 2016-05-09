@@ -1,0 +1,22 @@
+h2 Hello,
+-if user_signed_in?
+ = current_user.email
+-else
+  'Guest!
+
+hr Start posting!
+br
+= react_component 'property', { data: @properties }
+.btn-group
+  = link_to "Create", new_note_path, class:"btn btn-default"
+
+hr
+-@notes.each do |note|
+ p= link_to note.title, note
+ p Added date:
+ = note.created_at.strftime('%b %d, %Y')
+ br
+ = truncate(note.content, length: 200)
+
+br
+	hr

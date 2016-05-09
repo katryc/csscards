@@ -1,0 +1,29 @@
+
+strong Price
+= @note.price
+hr
+= @note.title
+
+br
+
+= @note.content
+strong Images
+- @pictures.each do |picture|
+ = image_tag picture.image.url(:thumbnail)
+
+hr
+
+
+
+
+  = link_to "All", notes_path, class: "btn"
+
+
+.btn-group
+  = link_to "Home", root_path, class:"btn btn-default"
+
+.btn-group
+    = link_to "Edit", edit_note_path, class:"btn btn-default"
+
+.btn-group
+    = link_to "Delete", note_path(@note), method: :delete, data: { confirm: "Delete this note?"}, class:"btn btn-default"

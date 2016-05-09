@@ -1,0 +1,265 @@
+// Place all the styles related to the Landing controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// @import url(https://fonts.googleapis.com/css?family=Fredericka+the+Great);
+body {
+  text-align:center;
+  padding:0;
+  margin:0;
+
+  font-size-adjust: auto;
+  background-color:white;
+}
+
+p {font-size: 3em;
+}
+
+
+
+#page1, #page2, #page3, #page4 {
+
+    display:block;
+      background-color: #9ad3de;
+      height:1000px;
+      width: 100%;
+    margin-bottom: 20px;
+    overflow: visible;
+    border: solid transparent;
+}
+
+
+.nav {
+  position: relative;
+  max-height: 100px;
+  max-width: 100%;
+  padding:  10px 50px;
+  font-size: 30px;
+/*  text-align: center;*/
+  z-index: 2;
+  background: black;
+}
+
+.nav ul {
+  width: 90%;
+  text-align: center;
+  display: inline;
+  margin: 0;
+  padding: 15px 3px 17px 0px;
+  list-style: none;
+}
+
+.nav ul li {
+  font: bold 16px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  color: #ffffff;
+  /*padding: 15px 20px;*/
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/***********header buttons and image***********/
+
+#himg{
+    align: left;
+    width: 100px;
+    height: 85px;
+}
+
+#hbtn {
+  padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    color: #fefefe;
+    background-color: #89bdd3;
+    display: inline-block;
+}
+
+#hbtn:hover {background-color: #3fb0ac}
+
+.header {position: absolute;
+   max-height: 450px;
+   border-bottom: solid red;
+}
+
+/*----slider code-----*/
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+
+div#slider { overflow: hidden; }
+div#slider figure img {max-height: 550px; width: 20%; float: left;  }
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+
+}
+
+
+
+
+#bg {
+  background-position: center top;
+  padding: 70px 90px 120px 90px;
+
+}
+/*========================*/
+
+.targets {
+  align-self: center;
+  padding: 10px;
+text-align: center;
+}
+
+
+
+.btn:hover {background-color: #3fb0ac}
+.targets li {display:inline-block;  padding: 10px;  }
+
+
+#search-container {
+  position: relative;
+    z-index: 99;
+    align-content: center;
+  margin-top: -34%;
+  text-align: center;
+
+}
+
+
+
+#search {
+  /* Put this on top of the blurred layer */
+  position: relative;
+  z-index: 100;
+  padding: 20px;
+  text-align: center;
+  background: rgba(34,34,34,0.75);
+
+}
+
+@media (max-width: 500px ) {
+  #bg { padding: 10px; }
+  #search-bg { background-position: center -10px; }
+}
+.form_search {
+    max-width:495px;
+    margin: 50px auto;
+    position: relative;
+    top: 0px;
+    display:inline;
+    text-align: center;
+
+
+}
+.search {
+
+     max-width: 300px;
+     max-height: 100px;
+
+  padding:10px 100px;
+  background:rgba(50, 50, 50, 0.2);
+  border:0px solid #dbdbdb;
+  background-color: white;
+  position: relative;
+
+
+}
+.search_button {
+  position:relative;
+  padding:8px 20px;
+  border:2px solid #207cca;
+  background-color:#207cca;
+  color:#fafafa;
+  width: 79px;
+
+}
+
+.search_button:hover  {
+  background-color:aqua;
+  color:#207cca;
+
+
+}
+.arrow {
+  position: relative;
+  left: -8px;
+  background: #207CCA;
+
+}
+
+.arrow:after {
+  right: 100%;
+  top: -10%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-color: rgba(32, 124, 202, 0);
+  border-right-color: #207CCA;
+  border-width: 10px;
+  margin-top: 10px;
+}
+#search h2, #search h5, #search h5 a { text-align: center; color: #fefefe; font-weight: normal; }
+#search h2 { margin-bottom: 50px }
+#search h5 { margin-top: 70px }
+ #descr{
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+    padding: 100px;
+    height: 50px;
+    position:relative;
+    top: 100px;
+    color: white;
+    z-index: 10;
+  }
+
+// ---------------------page4-------------------
+
+  #page4 h2{
+    position:relative;
+    padding:10px;
+    color:white;
+
+    text-align: center;
+  }
+
+.wrapper {
+    
+    height: inherit;
+    padding: 25px;
+    text-align: justify;
+    border: solid red;
+    overflow: hidden;
+    overflow:scroll;
+    max-height: 1000px;
+}
+#membertr{
+    border: solid red;
+}
+
+.member {
+
+    box-sizing: border-box;
+    box-shadow: 3em;}
